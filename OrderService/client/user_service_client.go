@@ -7,7 +7,7 @@ import (
 )
 
 func GetAllUsers() ([]model.User, error) {
-    resp, err := http.Get("http://localhost:8080/users") // Kubernetes DNS name
+    resp, err := http.Get("http://userservice:8080/users") // Kubernetes DNS name
     if err != nil {
         return nil, err
     }
