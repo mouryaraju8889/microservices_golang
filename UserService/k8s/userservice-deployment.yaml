@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: userservice
+  labels:
+    app: userservice
+spec:
+  replicas: 1  # Number of replicas/pods to run
+  selector:
+    matchLabels:
+      app: userservice
+  template:
+    metadata:
+      labels:
+        app: userservice
+    spec:
+      containers:
+      - name: userservice
+        image: rajmourya/userservice:latest  # Replace with your Docker Hub image
+        ports:
+        - containerPort: 8080  # Container port exposed (replace with the port your service is listening on)
