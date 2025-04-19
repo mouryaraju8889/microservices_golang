@@ -18,4 +18,4 @@ spec:
       - name: orderservice
         image: rajmourya/orderservice:latest  # Replace with your Docker Hub image
         ports:
-        - containerPort: 8081
+        - containerPort: 8080
