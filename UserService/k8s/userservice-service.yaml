@@ -7,6 +7,6 @@ spec:
     app: userservice  # Matches the deployment's label selector
   ports:
     - protocol: TCP
-      port: 8080   # Port exposed by the service
+      port: 80   # Port exposed by the service
       targetPort: 8080  # Port exposed by the container
   type: LoadBalancer  # This will expose the service externally (for Minikube)

@@ -7,6 +7,6 @@ spec:
     app: orderservice  # Matches the deployment's label selector
   ports:
     - protocol: TCP
-      port: 8081
+      port: 80
       targetPort: 8081
   type: LoadBalancer  # This will expose the service externally (for Minikube)
